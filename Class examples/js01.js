@@ -1,9 +1,15 @@
-const groceryItemFromInput=document.querySelector('input');
-const addButton=document.querySelector('button');
+const groceryItemFromInput=document.querySelector("input");
+const addButton=document.querySelector("button");
 
 function addNewGroceryItem(){
-    const itemToShow=groceryItemFromInput.value;
+    const itemToAdd=groceryItemFromInput.value;
+    if(itemToAdd){
+        const newGroceryItem=document.createElement("li");
+        newGroceryItem.textContent = itemToAdd;
+        document.querySelector("ul").appendChild(newGroceryItem);
+        groceryItemFromInput.value ="";
+    }
     
 }
-addButton.addEventListener('click, showGroceryItem');
-showGroceryItem();
+addButton.addEventListener('click', addNewGroceryItem);
+
