@@ -32,3 +32,25 @@
    }
 
    console.log(solveProblem('wslaoqushdasasdoqsdasda', 'a'));
+
+   let i=1;
+   while(i<=10) {
+    console.log('iteration#', i);
+    i++;
+   }
+
+
+   //You are given a word (string) and check if its palindrome (civic, radar, level). Output if it's true or false.
+
+   function isPalindrome(string){
+    let i=0;
+    while (i<stringth.length/>2){
+        if(string(i)!==string[string.length-1-i]){
+            result= false;
+            return console.log(result)
+        }
+    }
+    result=true;
+    return result;
+   }
+   console.log(isPalindrome('kayak'))
